@@ -7,7 +7,7 @@ define('DB_NAME', 'bloodbank');
 define('DB_USER', 'bloodlinkadmin');
 define('DB_PASS', 'Admin@1234!');
 
-define('APP_URL', 'https://bloodlink.azurewebsites.net');
+define('APP_URL', 'https://bloodlink-e5g2cpdpcahmgqg7.swedencentral-01.azurewebsites.net');
 
 define('SESSION_TIMEOUT', 1800);
 define('MAX_LOGIN_ATTEMPTS', 5);
