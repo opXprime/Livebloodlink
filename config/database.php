@@ -17,7 +17,9 @@ class Database {
                 PDO::ATTR_EMULATE_PREPARES   => false,
             ];
 
+            // Azure MySQL requires SSL
             if (DB_HOST !== '127.0.0.1' && DB_HOST !== 'localhost') {
+                $options[PDO::MYSQL_ATTR_SSL_CA] = '/etc/ssl/certs/DigiCert_Global_Root_CA.pem';
                 $options[PDO::MYSQL_ATTR_SSL_VERIFY_SERVER_CERT] = false;
             }
 
